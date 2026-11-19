@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Showroom Billing App</title>
+<meta name="description" content="A billing and stock app for furniture and retail showrooms. ₹300 a month per shop. By Ankit Kumar Sah.">
+<style>
+  :root { --ink:#16181d; --muted:#5b6170; --line:#e6e8ee; --bg:#ffffff; --soft:#f6f7fa; --accent:#1f5eff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 16px; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .logo { font-weight:600; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px; }
+  h1 { font-size:34px; line-height:1.2; margin:48px 0 12px; letter-spacing:-0.5px; }
+  h2 { font-size:22px; margin:48px 0 12px; }
+  h3 { font-size:17px; margin:24px 0 6px; }
+  p, li { color:var(--muted); }
+  .lead { font-size:18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:12px; margin-top:16px; }
+  .card { background:var(--soft); border-radius:14px; padding:16px; }
+  .card b { display:block; color:var(--ink); margin-bottom:4px; }
+  .card p { margin:0; font-size:15px; }
+  .price { border:1px solid var(--line); border-radius:16px; padding:24px; margin-top:16px; }
+  .amount { font-size:40px; font-weight:700; color:var(--ink); }
+  .amount span { font-size:16px; font-weight:400; color:var(--muted); }
+  .contact p { margin:4px 0; color:var(--ink); }
+  .policy { border-top:1px solid var(--line); margin-top:48px; }
+  footer { border-top:1px solid var(--line); margin-top:56px; padding:24px 0 40px; font-size:14px; color:var(--muted); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="logo">Showroom Billing App</span>
+  <nav><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Billing and stock for furniture and retail showrooms</h1>
+  <p class="lead">One app for the counter, the godown and the owner. Make bills, track stock in every showroom, collect dues and see the day's sales, on any phone or computer.</p>
+
+  <div class="grid">
+    <div class="card"><b>Fast billing</b><p>Bills in seconds, with part payments and dues.</p></div>
+    <div class="card"><b>Live stock</b><p>Every colour and size, in every showroom and godown.</p></div>
+    <div class="card"><b>Staff roles</b><p>Salesmen, managers and the owner each see only what they should.</p></div>
+    <div class="card"><b>Daily totals</b><p>Sales, money collected and dues, every day.</p></div>
+  </div>
+
+  <h2 id="pricing">Pricing</h2>
+  <div class="price">
+    <div class="amount">₹300 <span>per shop, per month</span></div>
+    <p>Includes the app for all your staff, updates, and support by phone and email. Paid monthly by UPI AutoPay or card. Cancel any time.</p>
+    <p>Setup for a new shop (adding showrooms, staff and products) is included at no extra charge.</p>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <div class="contact">
+    <p><b>Ankit Kumar Sah</b></p>
+    <p>Email: <a href="mailto:ablearningai@gmail.com">ablearningai@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917992293687">+91 79922 93687</a></p>
+    <p>Monday to Friday, 10 am to 7 pm</p>
+  </div>
+
+  <section class="policy" id="terms">
+    <h2>Terms of use</h2>
+    <p>Showroom Billing App is provided by Ankit Kumar Sah ("we"). By subscribing, the shop ("you") agrees to these terms.</p>
+    <h3>The service</h3>
+    <p>We provide access to the app for your shop and its staff for as long as your subscription is active, along with updates and support.</p>
+    <h3>Payment</h3>
+    <p>The subscription is ₹300 per shop per month, charged in advance each month through the autopay you approve. If a payment fails, we will contact you; access to updates and support may pause if a payment stays unpaid for 30 days.</p>
+    <h3>Your data</h3>
+    <p>Your bills, stock, customers and other records belong to you. You are responsible for the information your staff enter.</p>
+    <h3>Fair use</h3>
+    <p>Do not misuse the app, try to access another shop's data, or use it for anything unlawful.</p>
+    <h3>Changes</h3>
+    <p>We will tell you at least 30 days before any change to the price or these terms.</p>
+  </section>
+
+  <section class="policy" id="privacy">
+    <h2>Privacy policy</h2>
+    <p>The app stores what your shop enters: products, stock, bills, payments, staff accounts, and customer names and phone numbers. It is stored securely on Google Cloud (Firebase).</p>
+    <p>We use this information only to run the app for your shop and to give support. We never sell it or share it with anyone else, except where the law requires.</p>
+    <p>Each shop can see only its own data. Inside a shop, each staff member sees only what their role allows.</p>
+    <p>You can ask us for a copy of your shop's data, or to delete it, at any time by email.</p>
+  </section>
+
+  <section class="policy" id="refunds">
+    <h2>Cancellation and refund policy</h2>
+    <p>You can cancel any time: turn off the autopay in your UPI app, or email us. No further payments will be taken after you cancel.</p>
+    <p>The month already paid for stays active until it ends. Payments for a month that has already started are not refunded.</p>
+    <p>If you were charged by mistake or charged twice, email us and we will refund the full amount to the same account within 7 working days.</p>
+    <p>After cancelling, you can ask for a copy of your data within 30 days.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  © 2026 Ankit Kumar Sah · <a href="#terms">Terms</a> · <a href="#privacy">Privacy</a> · <a href="#refunds">Cancellation and refunds</a>
+</div></footer>
+</body>
+</html>
